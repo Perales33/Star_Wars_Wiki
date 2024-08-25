@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del conjunto de caracteres y configuración de vista para dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Star Wars Gallery</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap para el diseño responsivo y componentes predefinidos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link href="styles.css" rel="stylesheet">
+    <!--Enlaces Externos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384">
+    <script src="https://kit.fontawesome.com/e3d46192fc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="star-wars-bg">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+        <!-- Enlace a la página principal -->
+        <a class="navbar-brand star-wars-logo" href="index.html">Star Wars</a>
+        <!-- Menú de navegación colapsable para dispositivos móviles -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <!-- Página actual destacada como activa -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <!-- Contenido principal de la página -->
+    <div class="container text-center text-light mt-5">
+        <!-- Título de la galería -->
+        <h1>Galería de Star Wars</h1>
+        <!-- Botones para navegar a secciones de la galería -->
+        <a href="#planets" class="btn btn-outline-light mr-3 mt-3">Planetas</a>
+        <a href="#characters" class="btn btn-outline-light mt-3">Personajes</a>
+    </div>
+
+    <!-- Sección de planetas -->
+    <div class="container text-center text-light mt-5" id="planets">
+        <h2>Planetas</h2>
+        <!-- Ejemplo de una imagen de planeta -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://wallpaperaccess.com/full/2753734.jpg" class="img-fluid" alt="Tatooine">
+                <p class="mt-2">Tatooine</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.1DuhzNXmiDHWnRk3SvDQsAHaDt?rs=1&pid=ImgDetMain" class="img-fluid" alt="Hoth">
+                <p class="mt-2">Hoth</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://wallpaperaccess.com/full/4452903.jpg" class="img-fluid" alt="Endor">
+                <p class="mt-2">Endor</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/Death-Star-II_b5760154.jpeg?region=0%2C68%2C2160%2C1080" class="img-fluid" alt="Death Star">
+                <p class="mt-2">Death Star</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/11a0cc95-aa8d-48be-bc47-e55baa6ecacc/dfxpnlg-715e6f84-2886-447d-98e5-d734a22e4ace.png/v1/fill/w_1194,h_669,q_70,strp/coruscant_from_star_wars_13_by_mholtsmeier_dfxpnlg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvMTFhMGNjOTUtYWE4ZC00OGJlLWJjNDctZTU1YmFhNmVjYWNjXC9kZnhwbmxnLTcxNWU2Zjg0LTI4ODYtNDQ3ZC05OGU1LWQ3MzRhMjJlNGFjZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nMdYQiYETIkUj-50QfbBPUs66PS_KX1EuU86ugDhjlo" class="img-fluid" alt="Coruscant">
+                <p class="mt-2">Coruscant</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP._RJcMRns_R8IaxItgtu5WgHaDt?rs=1&pid=ImgDetMain" class="img-fluid" alt="Dagobah">
+                <p class="mt-2">Dagobah</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/databank_mustafar_01_169_5b470758.jpeg?region=0%2C98%2C1560%2C780" class="img-fluid" alt="Mustafar">
+                <p class="mt-2">Mustafar</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://wallpapercave.com/wp/wp3724248.jpg" class="img-fluid" alt="Naboo">
+                <p class="mt-2">Naboo</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://i.ytimg.com/vi/6gp1ANmfKIE/maxresdefault.jpg" class="img-fluid" alt="Kamino">
+                <p class="mt-2">Kamino</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/R.4cc111a25056b8c24949217730f703ca?rik=5ouoFHf3UP%2bxaQ&pid=ImgRaw&r=0" class="img-fluid" alt="Bespin">
+                <p class="mt-2">Bespin</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.oj-rwCrk6a0CZww5AlUmwwHaEK?rs=1&pid=ImgDetMain" class="img-fluid" alt="Geonosis">
+                <p class="mt-2">Geonosis</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/05/Jakku.jpg" class="img-fluid" alt="Jakku">
+                <p class="mt-2">Jakku</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://wallpapercave.com/wp/wp7733779.jpg" class="img-fluid" alt="Kashyyyk">
+                <p class="mt-2">Kashyyyk</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.5o2ywfe93Oy3Fzh-y_23cAHaEK?rs=1&pid=ImgDetMain" class="img-fluid" alt="Yavin 4">
+                <p class="mt-2">Yavin 4</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/swtor/1/1a/Ilum.jpg" class="img-fluid" alt="Ilum">
+                <p class="mt-2">Ilum</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de personajes -->
+    <div class="container text-center text-light mt-5" id="characters">
+        <h2>Personajes</h2>
+        <div class="row mt-4">
+             <!-- Ejemplo de una imagen de personaje -->
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.vGtU9vJzXF9AjPZR767f4wHaLk?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Luke Skywalker">
+                <p class="mt-2 character-name">Luke Skywalker</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://www.starwars-universe.com/images/encyclopedie/personnages/images_v6/leia_imv6.jpg" class="img-fluid character-img" alt="Princess Leia">
+                <p class="mt-2 character-name">Princesa Leia</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.iX65CwGEPMbIyAN5nwqE2AHaLG?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Darth Vader">
+                <p class="mt-2 character-name">Darth Vader</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://i.pinimg.com/736x/75/13/ff/7513ff7af5656fb6e99f1ce529889bc2.jpg" class="img-fluid character-img" alt="Yoda">
+                <p class="mt-2 character-name">Yoda</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.c-qlgHW8qgh62XQuVA7M4wHaL3?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Han Solo">
+                <p class="mt-2 character-name">Han Solo</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/R.dbc08428b74c49c793ef779c79bb9eed?rik=LIWA9JUctgclvA&pid=ImgRaw&r=0" class="img-fluid character-img" alt="Chewbacca">
+                <p class="mt-2 character-name">Chewbacca</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.cAmV9EwhtP-IAY2rH04IVAHaHe?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="R2-D2">
+                <p class="mt-2 character-name">R2-D2</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.B6Ye_mZL-QFDSnKLTSCvDAHaJL?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="C-3PO">
+                <p class="mt-2 character-name">C-3PO</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.a55IMQioTS6jPvFN14HhSAHaJ_?w=562&h=758&rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Obi-Wan Kenobi">
+                <p class="mt-2 character-name">Obi-Wan Kenobi</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <img src="https://vignette.wikia.nocookie.net/starwars/images/8/8f/Lando_ROTJ.png/revision/latest?cb=20170610183731" class="img-fluid character-img" alt="Lando Calrissian">
+                <p class="mt-2 character-name">Lando Calrissian</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.WA6G91hHbm98s515n_maFwHaJQ?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Emperor Palpatine">
+                <p class="mt-2 character-name">Emperador Palpatine</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="https://th.bing.com/th/id/OIP.MhL8ke6fp-pSN579mDmoMQHaJe?rs=1&pid=ImgDetMain" class="img-fluid character-img" alt="Anakin Skywalker">
+                <p class="mt-2 character-name">Anakin Skywalker</p>
+            </div>
+        </div>
+    </div>
+    <!--Menú-->
+    <footer class="footer">
+        <div class="derechos">
+            <p>&copy 2024 - Todos los derechos reservados</p>
+        </div>
+        <div class="flecha">
+            <a href="#nav"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <div class="redessociales">
+                <ul>
+                    <li><a href="https://github.com/Perales33/Porfolio.git" class="twitter"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/antonio-p-968647277" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

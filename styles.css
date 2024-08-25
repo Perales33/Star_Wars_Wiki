@@ -1,0 +1,242 @@
+/* Estilos de cuerpo */
+body {
+    background-color: #000; /* Establece el color de fondo del cuerpo como negro */
+    color: #f8f9fa; /* Cambia el color del texto a un tono claro, casi blanco */
+    font-family: 'Roboto', sans-serif; /* Define la fuente del cuerpo como Roboto, con una fuente secundaria genérica sans-serif en caso de que Roboto no esté disponible */
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Star Jedi', sans-serif; /* Establece la fuente del texto en la barra de navegación como Star Jedi, con sans-serif como fuente secundaria */
+    font-size: 24px; /* Ajusta el tamaño de la fuente del texto en la barra de navegación a 24 píxeles */
+}
+
+h1 {
+    color: #ffe81f; /* Cambia el color del texto de los encabezados h1 a un amarillo brillante */
+}
+
+p {
+    font-size: 18px; /* Establece el tamaño de la fuente del texto en los párrafos a 18 píxeles */
+    color: #adb5bd; /* Cambia el color del texto de los párrafos a un gris claro */
+}
+
+/*Estilos de los botones*/
+.btn-primary {
+    background-color: #007bff; /* Define el color de fondo del botón primario a un azul brillante */
+    border: none; /* Elimina el borde del botón */
+    transition: background-color 0.3s; /* Agrega una transición suave de 0.3 segundos al color de fondo del botón */
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cambia el color de fondo del botón cuando el cursor está sobre él a un azul más oscuro */
+}
+
+/*Estilos de las imagenes de la galeria*/
+.img-fluid {
+    border-radius: 10px; /* Aplica bordes redondeados de 10 píxeles a las imágenes */
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos para la transformación de la imagen */
+    height: 150px; /* Establece una altura fija de 150 píxeles para las imágenes */
+    width: auto; /* Ajusta el ancho de la imagen automáticamente para mantener la proporción */
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen en un 5% cuando el cursor está sobre ella */
+}
+
+/*Estilos del formulario*/
+.form-control {
+    background-color: #212529; /* Establece el color de fondo de los controles del formulario a un gris oscuro */
+    color: #f8f9fa; /* Cambia el color del texto dentro de los controles del formulario a blanco */
+    border: 1px solid #495057; /* Define un borde delgado de 1 píxel con un gris medio para los controles del formulario */
+}
+
+.form-control::placeholder {
+    color: #6c757d; /* Establece el color del texto del marcador de posición en los campos del formulario a un gris claro */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Cambia el color del borde a azul brillante cuando el control del formulario está en foco */
+    box-shadow: none; /* Elimina la sombra del cuadro cuando el control del formulario está en foco */
+}
+
+/* Estilo para las imágenes de los personajes */
+#characters img {
+    width: 200px; /* Establece un ancho fijo de 200 píxeles para las imágenes de los personajes */
+    height: 350px; /* Establece una altura fija de 350 píxeles para las imágenes de los personajes */
+    border-radius: 10px; /* Aplica bordes redondeados de 10 píxeles a las imágenes de los personajes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transiciones suaves de 0.3 segundos para la transformación y la sombra de las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Aplica una sombra sutil alrededor de las imágenes */
+}
+
+#characters img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de las imágenes de los personajes en un 5% cuando el cursor está sobre ellas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Aumenta la sombra alrededor de las imágenes cuando el cursor está sobre ellas para un efecto más destacado */
+}
+
+/*Estilos para el video de la pagina de inicio*/
+.video-container {
+    position: relative; /* Establece la posición del contenedor del video como relativa para ajustar el iframe dentro de él */
+    padding-bottom: 56.25%; /* Establece un padding inferior para mantener una relación de aspecto de 16:9 */
+    height: 0; /* Establece la altura del contenedor en 0 para que el padding defina la altura */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    max-width: 100%; /* Limita el ancho máximo del contenedor al 100% del contenedor padre */
+    background: #000; /* Establece un fondo negro para el contenedor del video */
+}
+
+.video-container iframe {
+    position: absolute; /* Establece la posición del iframe como absoluta para llenar el contenedor */
+    top: 0; /* Posiciona el iframe en la parte superior del contenedor */
+    left: 0; /* Posiciona el iframe a la izquierda del contenedor */
+    width: 100%; /* Establece el ancho del iframe al 100% del contenedor */
+    height: 100%; /* Establece la altura del iframe al 100% del contenedor */
+}
+
+/*Estilos para la pagina de Wikipedia*/
+.iframe-container {
+    position: relative; /* Establece la posición del contenedor del iframe como relativa */
+    padding-bottom: 56.25%; /* Establece un padding inferior para mantener una relación de aspecto de 16:9 */
+    height: 0; /* Establece la altura del contenedor en 0 para que el padding defina la altura */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    max-width: 100%; /* Limita el ancho máximo del contenedor al 100% del contenedor padre */
+    background: #000; /* Establece un fondo negro para el contenedor del iframe */
+    margin-top: 20px; /* Agrega un margen superior de 20 píxeles para separar el contenedor del iframe de otros elementos */
+}
+
+.iframe-container iframe {
+    position: absolute; /* Establece la posición del iframe como absoluta para llenar el contenedor */
+    top: 0; /* Posiciona el iframe en la parte superior del contenedor */
+    left: 0; /* Posiciona el iframe a la izquierda del contenedor */
+    width: 100%; /* Establece el ancho del iframe al 100% del contenedor */
+    height: 100%; /* Establece la altura del iframe al 100% del contenedor */
+}
+
+.footer {
+    padding: 0px 0;
+    display: grid;
+    grid-row: 3;
+    position: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #1e2326;
+}
+
+:root{
+    --facebook: #00ff84;
+    --instagram: #6c757d;
+    --twitter: #0f0f0f;
+    --youtube: #254267;
+    --linkedin: #0a66c2;
+    --download: #0000ff;
+    --certificado: #FFB900;
+    --web: green;
+    --poster: #ea18ea;
+}
+.footer .redessociales {
+    margin-top: 20px;
+    padding: 0px;
+    display: block;
+}
+.derechos {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    align-self: center;
+}
+
+.flecha {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    align-self: center;
+}
+
+.flecha a i{
+    color: #fff;
+    animation: animacion_flecha 2s infinite;
+}
+
+.flecha a i:hover{
+    color:yellow;
+    transform: scale(1.4);
+}
+
+.redessociales {
+    grid-column: 3;
+    display: flex;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+
+.redessociales ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+.redessociales ul li a {
+    display: block;
+    padding:0 10px;
+    background-color: #808080;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px;
+    transition: 0.4s;
+}
+
+.redessociales ul:hover a{
+    filter:blur(1px);
+    color: #fff;
+}
+
+.redessociales ul li a:hover {
+    transform: translateY(-3px) scale(1.5);
+    filter: none;
+}
+
+.redessociales ul li .download {
+    background-color: var(--download);
+}
+.redessociales ul li .instagram {
+    background-color: var(--instagram);
+}
+.redessociales ul li .twitter {
+    background-color: var(--twitter);
+}
+.redessociales ul li .youtube{
+    background-color: var(--youtube);
+}
+.redessociales ul li .linkedin{
+    background-color: var(--linkedin);
+}
+.redessociales ul li .facebook{
+    background-color: var(--facebook);
+}
+.redessociales ul li .web {
+    background-color: var(--web);
+}
+
+.redessociales ul li .certificado {
+    background-color: var(--certificado);
+}
+
+.redessociales ul li .poster {
+    background-color: var(--poster);
+}
+
+@keyframes animacion_flecha {
+    100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    0%{
+        transform: translateY(0px);
+    }
+}
