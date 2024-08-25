@@ -4,6 +4,38 @@ body {
     color: #f8f9fa; /* Cambia el color del texto a un tono claro, casi blanco */
     font-family: 'Roboto', sans-serif; /* Define la fuente del cuerpo como Roboto, con una fuente secundaria genérica sans-serif en caso de que Roboto no esté disponible */
 }
+body.star-wars-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.star-wars-logo {
+    font-family: 'Audiowide', sans-serif;
+    color: #ffe81f;
+    font-size: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.nav-link {
+    color: #ffe81f;
+}
+.nav-link:hover {
+    color: #ffcc00;
+}
+.container {
+    margin-top: 15%;
+}
 
 .navbar-dark .navbar-brand {
     font-family: 'Star Jedi', sans-serif; /* Establece la fuente del texto en la barra de navegación como Star Jedi, con sans-serif como fuente secundaria */
@@ -20,15 +52,19 @@ p {
 }
 
 /*Estilos de los botones*/
-.btn-primary {
-    background-color: #007bff; /* Define el color de fondo del botón primario a un azul brillante */
-    border: none; /* Elimina el borde del botón */
-    transition: background-color 0.3s; /* Agrega una transición suave de 0.3 segundos al color de fondo del botón */
+
+
+.btn-outline-light, .btn-primary {
+    background-color: #000;
+    border-color: #ffcc00; /* Color dorado característico */
+    color: #ffcc00;
     margin-bottom: 20px;
 }
-
-.btn-primary:hover {
-    background-color: #0056b3; /* Cambia el color de fondo del botón cuando el cursor está sobre él a un azul más oscuro */
+.btn-outline-light:hover, .btn-primary:hover {
+    background-color: #ffcc00; /* Fondo dorado en hover */
+    color: #000; /* Texto negro en hover */
+    border-color: #ffcc00; /* Borde dorado en hover */
+    margin-top: 0px;
 }
 
 /*Estilos de las imagenes de la galeria*/
@@ -36,7 +72,7 @@ p {
     border-radius: 10px; /* Aplica bordes redondeados de 10 píxeles a las imágenes */
     transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos para la transformación de la imagen */
     height: 150px; /* Establece una altura fija de 150 píxeles para las imágenes */
-    width: auto; /* Ajusta el ancho de la imagen automáticamente para mantener la proporción */
+    width: 80%; /* Ajusta el ancho de la imagen automáticamente para mantener la proporción */
 }
 
 .img-fluid:hover {
@@ -116,7 +152,7 @@ p {
     grid-row: 3;
     position: none;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #1e2326;
+    background-color: #343a40;
 }
 
 :root{
@@ -240,3 +276,23 @@ p {
         transform: translateY(0px);
     }
 }
+
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    border-bottom: 1px solid #ddd;
+}
+.card-body {
+    padding: 0.75rem;
+}
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
